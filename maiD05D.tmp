@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://m5vsmp2xkmpa"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ajyd4"]
+[ext_resource type="Texture2D" uid="uid://bx536guvd53e2" path="res://assets/grass.png" id="2_3cdoi"]
+[ext_resource type="Script" path="res://player.gd" id="3_21ex0"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ajyd4")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_3cdoi")
+
+[node name="player" type="Area2D" parent="."]
+script = ExtResource("3_21ex0")
+metadata/_edit_group_ = true
+
+[node name="GameTimer" type="Timer" parent="."]
+
+[node name="Powerup" type="Timer" parent="."]
